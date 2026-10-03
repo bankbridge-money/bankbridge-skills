@@ -68,6 +68,6 @@ Format: "<category>: $X,XXX across N transactions — review with your accountan
 ## Guardrails
 
 - Never sign / commit to a deduction. Use language like "potentially deductible" or "worth discussing with your accountant."
-- Don't estimate. If Plaid returned 0 results for a window, say 0 — don't extrapolate.
+- Don't estimate. If BankBridge returned 0 results for a window, say 0 — don't extrapolate.
 - Point the user to a real CPA for anything beyond categorization. You're assembly; they're interpretation.
 - The CSV file goes into the user's working directory. Tell them where it is.

@@ -30,7 +30,7 @@ Trigger on:
 
    **C. Unfamiliar merchants.** Merchants that appear in the last 30 days but NOT in the 12 months prior. Get that baseline by calling `get_merchant_history` for the 12-month window — if 0 charges prior, it's new.
 
-   **D. Off-hours.** If Plaid provides `datetime`, flag charges between midnight and 5am local time. Not always fraud, but worth asking about.
+   **D. Off-hours.** If the transaction includes `datetime`, flag charges between midnight and 5am local time. Not always fraud, but worth asking about.
 
    **E. Amount patterns.** Sequences like $1.00 then $XXX.XX on the same card within an hour — classic card-test fraud pattern.
 

@@ -26,7 +26,7 @@ Trigger on:
 3. **Classify each charge:**
    - **Active recurring** — charged in the last 45 days on its detected cadence. Normal.
    - **Price creep** — last charge > first charge by more than 10%. Calculate: "Netflix: $11.99 → $15.99 (+33% in 8 months)".
-   - **Duplicate** — two different merchant_names whose amounts + cadence + timing make them likely the same charge (Plaid occasionally splits one sub across two merchant labels). Flag for user to verify.
+   - **Duplicate** — two different merchant_names whose amounts + cadence + timing make them likely the same charge (the bank data occasionally splits one sub across two merchant labels). Flag for user to verify.
    - **Zombie** — detected as recurring, but no charge in the last 90 days. Likely already cancelled; confirm before including in any cancel list.
    - **Forgettable** — < $20/mo, no activity signals from the user that we can derive. Flag gently: "might be worth reviewing."
 
